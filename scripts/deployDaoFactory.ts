@@ -12,14 +12,13 @@ const _ = require('underscore');
 const fs  = require("fs");
 const { parse } = require('csv-parse/lib/sync');
 
-const isValidTonAddress = (address) => /^(?:-1|0):[0-9a-fA-F]{64}$/.test(address);
+const isValidTonAddress = (address: string) => /^(?:-1|0):[0-9a-fA-F]{64}$/.test(address);
 let signer: Signer;
-let owner: Contract<FactorySource["Wallet"]>;
-let daoFactoryCon: Contract<FactorySource["DaoFactory"]>;
+
 
 let daoFactoryDeployer: Contract<FactorySource["DaoFactory"]>;
 
-let root: Contract<FactorySource["TokenRoot"]>;
+
 
 
 const main = async () => {
@@ -28,7 +27,7 @@ const main = async () => {
   const signer = (await locklift.keystore.getSigner("0"))!;
   const _randomNonce = locklift.utils.getRandomNonce();
 
-  let accountsFactory = await locklift.factory.getAccountsFactory("Wallet");
+  
 
   const { contract } = await locklift.factory.deployContract({
     contract: "DaoFactory",

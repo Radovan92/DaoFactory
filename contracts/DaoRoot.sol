@@ -16,7 +16,7 @@ import "./MsgFlag.sol";
 import "./Platform.sol";
 import "./utils/Delegate.sol";
 import "./utils/cell-encoder/DaoCellEncoder.sol";
-import "./bridge/interfaces/event-configuration-contracts/IEverscaleEventConfiguration.sol";
+import "./IEverscaleEventConfiguration.sol";
 
 contract DaoRoot is DaoCellEncoder, IDaoRoot, IUpgradable, Delegate {
 

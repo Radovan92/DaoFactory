@@ -1,7 +1,7 @@
 pragma ton-solidity >= 0.39.0;
 
 import "./IBasicEventConfiguration.sol";
-import "./../event-contracts/IEverscaleEvent.sol";
+import "./IEverscaleEvent.sol";
 
 
 interface IEverscaleEventConfiguration is IBasicEventConfiguration {

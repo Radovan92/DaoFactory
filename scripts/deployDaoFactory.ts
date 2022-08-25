@@ -1,18 +1,9 @@
 import { Contract, Signer } from "locklift";
 import { FactorySource } from "../build/factorySource";
 
-const {
-    afterRun,
-} = require('./../test/utils');
-const {load} = require('csv-load-sync');
-const {use} = require("chai");
 
-const prompts = require('prompts');
-const _ = require('underscore');
-const fs  = require("fs");
-const { parse } = require('csv-parse/lib/sync');
 
-const isValidTonAddress = (address: string) => /^(?:-1|0):[0-9a-fA-F]{64}$/.test(address);
+
 let signer: Signer;
 
 
@@ -39,7 +30,7 @@ const main = async () => {
     value: locklift.utils.toNano(10),
 });
 daoFactoryDeployer = contract;
-console.log(`Airdrop factory deployed at: ${daoFactoryDeployer.address.toString()}`);
+console.log(`Dao factory deployed at: ${daoFactoryDeployer.address.toString()}`);
 
 }
 

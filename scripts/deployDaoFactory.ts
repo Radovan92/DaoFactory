@@ -2,14 +2,8 @@ import { Contract, Signer } from "locklift";
 import { FactorySource } from "../build/factorySource";
 
 
-
-
 let signer: Signer;
-
-
 let daoFactoryDeployer: Contract<FactorySource["DaoFactory"]>;
-
-
 
 
 const main = async () => {

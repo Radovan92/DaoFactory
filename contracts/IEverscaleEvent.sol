@@ -1,6 +1,6 @@
 pragma ton-solidity >= 0.39.0;
 
-import "./IBasicEvent.sol";
+import "IBasicEvent.sol";
 
 
 interface IEverscaleEvent is IBasicEvent {

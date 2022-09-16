@@ -3041,7 +3041,7 @@ THROW 0
 CALL $checkDelegate_c45d6a7d_internal_macro$
 
 .macro checkDelegate_c45d6a7d_internal_macro
-.loc ../contracts/utils/Delegate.sol, 16
+.loc ../contracts/Delegate.sol, 16
 GETGLOB 9
 GETGLOB 10
 PUSHINT 267
@@ -3053,30 +3053,30 @@ PUSHCONT {
 	PAIR
 }
 IF
-.loc ../contracts/utils/Delegate.sol, 17
+.loc ../contracts/Delegate.sol, 17
 DUP
 ISNULL
 THROWIF 1201
-.loc ../contracts/utils/Delegate.sol, 18
+.loc ../contracts/Delegate.sol, 18
 DUP
 ISNULL
 THROWIF 63
-.loc ../contracts/utils/Delegate.sol, 19
+.loc ../contracts/Delegate.sol, 19
 DUP
 FIRST
-.loc ../contracts/utils/Delegate.sol, 20
+.loc ../contracts/Delegate.sol, 20
 DUP
 THROWIFNOT 1202
-.loc ../contracts/utils/Delegate.sol, 21
+.loc ../contracts/Delegate.sol, 21
 DEPTH
 ADDCONST -4
 PICK
 HASHSU
-.loc ../contracts/utils/Delegate.sol, 22
+.loc ../contracts/Delegate.sol, 22
 OVER
 EQINT 1
 PUSHCONT {
-	.loc ../contracts/utils/Delegate.sol, 23
+	.loc ../contracts/Delegate.sol, 23
 	PUSHINT 0
 	PUSH S3
 	SECOND
@@ -3087,7 +3087,7 @@ PUSHCONT {
 	OVER
 	EQUAL
 	THROWIFNOT 1203
-	.loc ../contracts/utils/Delegate.sol, 24
+	.loc ../contracts/Delegate.sol, 24
 	GETGLOB 9
 	GETGLOB 10
 	PUSHINT 267
@@ -3095,20 +3095,20 @@ PUSHCONT {
 	DROP
 }
 PUSHCONT {
-	.loc ../contracts/utils/Delegate.sol, 26
+	.loc ../contracts/Delegate.sol, 26
 	FALSE
 	DUP
-	.loc ../contracts/utils/Delegate.sol, 27
+	.loc ../contracts/Delegate.sol, 27
 	NEWDICT
 	PAIR
-	.loc ../contracts/utils/Delegate.sol, 28
+	.loc ../contracts/Delegate.sol, 28
 	PUSHINT 0
 	PUSHCONT {
 		PUSH2 S0, S4
 		LESS
 	}
 	PUSHCONT {
-		.loc ../contracts/utils/Delegate.sol, 29
+		.loc ../contracts/Delegate.sol, 29
 		PUSH2 S0, S5
 		SECOND
 		PUSHINT 32
@@ -3121,12 +3121,12 @@ PUSHCONT {
 		NOT
 		AND
 		PUSHCONT {
-			.loc ../contracts/utils/Delegate.sol, 30
+			.loc ../contracts/Delegate.sol, 30
 			TRUE
 			POP S3
 		}
 		PUSHCONT {
-			.loc ../contracts/utils/Delegate.sol, 32
+			.loc ../contracts/Delegate.sol, 32
 			DUP2
 			PUSH S7
 			SECOND
@@ -3147,16 +3147,16 @@ PUSHCONT {
 			POP S2
 		}
 		IFELSE
-		.loc ../contracts/utils/Delegate.sol, 28
+		.loc ../contracts/Delegate.sol, 28
 		INC
-		.loc ../contracts/utils/Delegate.sol, 0
+		.loc ../contracts/Delegate.sol, 0
 	}
 	WHILE
 	DROP
-	.loc ../contracts/utils/Delegate.sol, 35
+	.loc ../contracts/Delegate.sol, 35
 	SWAP
 	THROWIFNOT 1203
-	.loc ../contracts/utils/Delegate.sol, 36
+	.loc ../contracts/Delegate.sol, 36
 	GETGLOB 9
 	GETGLOB 10
 	NEWC
@@ -3171,14 +3171,14 @@ PUSHCONT {
 }
 IFELSE
 SETGLOB 10
-.loc ../contracts/utils/Delegate.sol, 0
+.loc ../contracts/Delegate.sol, 0
 BLKDROP 3
 
 .macro encodeDaoEthereumActionData
 DROP
 GETGLOB 6
 THROWIFNOT 76
-.loc ../contracts/utils/cell-encoder/DaoCellEncoder.sol, 6
+.loc ../contracts/DaoCellEncoder.sol, 6
 LDI 8
 LDU 256
 LDU 32
@@ -3188,7 +3188,7 @@ ROTREV
 PAIR
 SWAP
 ENDS
-.loc ../contracts/utils/cell-encoder/DaoCellEncoder.sol, 0
+.loc ../contracts/DaoCellEncoder.sol, 0
 CALLREF {
 	CALL $encodeDaoEthereumActionData_2394a3ac_internal_macro$
 }
@@ -3224,7 +3224,7 @@ THROW 0
 CALL $encodeDaoEthereumActionData_2394a3ac_internal_macro$
 
 .macro encodeDaoEthereumActionData_2394a3ac_internal_macro
-.loc ../contracts/utils/cell-encoder/DaoCellEncoder.sol, 15
+.loc ../contracts/DaoCellEncoder.sol, 15
 REVERSE 4, 0
 NEWC
 STI 8
@@ -3235,18 +3235,18 @@ UNPAIR
 XCHG S2
 STU 32
 STDICT
-.loc ../contracts/utils/cell-encoder/DaoCellEncoder.sol, 16
+.loc ../contracts/DaoCellEncoder.sol, 16
 ENDC
-.loc ../contracts/utils/cell-encoder/DaoCellEncoder.sol, 0
+.loc ../contracts/DaoCellEncoder.sol, 0
 
 .macro decodeDaoEthereumActionData
 DROP
 GETGLOB 6
 THROWIFNOT 76
-.loc ../contracts/utils/cell-encoder/DaoCellEncoder.sol, 19
+.loc ../contracts/DaoCellEncoder.sol, 19
 LDREF
 ENDS
-.loc ../contracts/utils/cell-encoder/DaoCellEncoder.sol, 0
+.loc ../contracts/DaoCellEncoder.sol, 0
 CALLREF {
 	CALL $decodeDaoEthereumActionData_a3d3c7a3_internal_macro$
 }
@@ -3293,10 +3293,10 @@ THROW 0
 CALL $decodeDaoEthereumActionData_a3d3c7a3_internal_macro$
 
 .macro decodeDaoEthereumActionData_a3d3c7a3_internal_macro
-.loc ../contracts/utils/cell-encoder/DaoCellEncoder.sol, 19
+.loc ../contracts/DaoCellEncoder.sol, 19
 PUSHINT 0
 BLKPUSH 2, 0
-.loc ../contracts/utils/cell-encoder/DaoCellEncoder.sol, 27
+.loc ../contracts/DaoCellEncoder.sol, 27
 ROLL 3
 CTOS
 LDI 8
@@ -3309,7 +3309,7 @@ REVERSE 4, 0
 POP S6
 POP S4
 POP S2
-.loc ../contracts/utils/cell-encoder/DaoCellEncoder.sol, 0
+.loc ../contracts/DaoCellEncoder.sol, 0
 
 .macro c4_to_c7
 PUSHROOT

@@ -3,8 +3,8 @@ pragma ton-solidity >= 0.57.0;
 pragma AbiHeader expire;
 pragma AbiHeader pubkey;
 
-import "./DaoRoot.sol";
-import "./structures/ProposalConfigurationStructure.sol";
+import "DaoRoot.sol";
+import "ProposalConfigurationStructure.sol";
 
 contract DaoFactory {
 

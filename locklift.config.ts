@@ -11,7 +11,7 @@ const LOCAL_NETWORK_ENDPOINT = "http://localhost/graphql";
 const config: LockliftConfig = {
   compiler: {
     // Specify path to your TON-Solidity-Compiler
-     path: "/home/radovan/TON-Solidity-Compiler/build/solc/solc",
+     path: "/home/visnja/TON-Solidity-Compiler/build/solc/solc",
 
     // Or specify version of compiler
     //version: "0.61.2",
@@ -23,9 +23,9 @@ const config: LockliftConfig = {
   },
   linker: {
     // Specify path to your stdlib
-     lib: "/home/radovan/TON-Solidity-Compiler/lib/stdlib_sol.tvm",
+     lib: "/home/visnja/TON-Solidity-Compiler/lib/stdlib_sol.tvm",
     // // Specify path to your Linker
-     path: "/home/radovan/TVM-linker/target/release/tvm_linker",
+     path: "/home/visnja/TVM-linker/target/release/tvm_linker",
 
     // Or specify version of linker
     //version: "0.15.48",

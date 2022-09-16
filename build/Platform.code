@@ -52,7 +52,6 @@ PUSHCONT {
 IFELSE
 .loc ../contracts/Platform.sol, 0
 BLKDROP 3
-.loc ../contracts/utils/Platform.sol, 0
 CALLREF {
 	CALL $c7_to_c4$
 }

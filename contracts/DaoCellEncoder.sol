@@ -1,6 +1,6 @@
 pragma ton-solidity >= 0.39.0;
 
-import "../../structures/ActionStructure.sol";
+import "ActionStructure.sol";
 
 contract DaoCellEncoder {
     function encodeDaoEthereumActionData(

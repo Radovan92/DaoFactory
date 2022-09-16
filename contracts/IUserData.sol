@@ -1,7 +1,7 @@
 pragma ton-solidity >= 0.39.0;
 pragma AbiHeader expire;
 
-import "./IStakingPool.sol";
+import "IStakingPool.sol";
 
 interface IUserData {
     struct RewardRoundData {

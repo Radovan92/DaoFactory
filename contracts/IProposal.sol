@@ -1,9 +1,9 @@
 pragma ton-solidity >= 0.39.0;
 
-import 'IDaoRoot.sol';
-import "../structures/ActionStructure.sol";
-import "../structures/ProposalConfigurationStructure.sol";
-import "../structures/ProposalSates.sol";
+import "IDaoRoot.sol";
+import "ActionStructure.sol";
+import "ProposalConfigurationStructure.sol";
+import "ProposalStates.sol";
 
 interface IProposal is ActionStructure, ProposalConfigurationStructure, ProposalStates {
 

@@ -10,6 +10,7 @@ contract DaoFactory {
 
     uint32 public randomNonce;
     uint32 public nonce=0;
+    address daoRoot;
     constructor() public {
         require(tvm.pubkey() != 0 && tvm.pubkey() == msg.pubkey(), 1001);
         tvm.accept();
@@ -18,7 +19,7 @@ contract DaoFactory {
     function deploy(TvmCell platformCode_, ProposalConfigurationStructure.ProposalConfiguration proposalConfiguration_) external returns(address) {
         tvm.accept();
 	randomNonce = nonce;
-        address daoRoot = new DaoRoot {
+        daoRoot = new DaoRoot {
             code: platformCode_,
             value: 1 ever,
             pubkey: 0,
@@ -30,6 +31,10 @@ contract DaoFactory {
         return daoRoot;
     }
 
+	function getDaoRoot() public view returns(address daoAddr)
+	{
+		return daoRoot;
+	}
     function withdrawGas(address gasTo) external onlyOwner {
         tvm.accept();
         gasTo.transfer({value: 0, flag: 128});
